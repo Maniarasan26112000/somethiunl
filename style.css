@@ -1,0 +1,150 @@
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header.navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+header .icons #menu-bars
+{
+    display: none;
+}
+header
+{
+    border: 1px solid;
+    display: flex;
+    font-size: 2rem;
+    padding: 20px;
+    /* gap: 20%; */
+    justify-content: space-between;
+   
+}
+header a{
+    text-decoration: none;
+}
+#menu-bars{
+    display: none;
+}
+.navbar
+{
+    border: 1px solid;
+    display: flex;
+    gap: 7rem;
+    padding: 10px;
+}
+.logo
+{
+    padding: 10px;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media qqueries------------------------------------------------------------------ */
+
+
+@media (max-width:991px)
+{
+    html {
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width:768px)
+{
+
+    header .icons #menu-bars
+    {
+        display: inline-block;
+    }
+
+    header .navbar
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: .1rem; solid rgba(0,0,0,.2);
+        border-top: .1rem; solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a
+    {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+}
+
+@media (max-width:991px)
+{
+    html {
+        font-size: 50%;
+    }
+    
+   
+}
+
